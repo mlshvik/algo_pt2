@@ -1,8 +1,10 @@
-def quicksort(array, left, right):
+def quicksort(array, left, right, search_pos):
     if left < right:
         index = partition(array, left, right)
-        quicksort(array, left, index - 1)
-        quicksort(array, index, right)
+        if index == search_pos:
+            return array[index]
+        quicksort(array, left, index - 1, search_pos)
+        quicksort(array, index, right, search_pos)
 
 
 def partition(array, left, right):
@@ -27,7 +29,7 @@ k = 4
 
 def find_kth_element(array, k):
     temp_arr = array[:]
-    quicksort(temp_arr, 0, len(temp_arr) - 1)
+    quicksort(temp_arr, 0, len(temp_arr) - 1, k)
     return temp_arr[len(array) - k], array.index(temp_arr[-k])
 
 print(find_kth_element(array, k))
