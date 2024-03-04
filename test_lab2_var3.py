@@ -2,7 +2,7 @@ import unittest
 from lab2_var3 import JackiesBananas
 
 
-class TestForMavpa(unittest.TestCase):
+class TestForMonkey(unittest.TestCase):
     def test_find_min_bana(self):
         self.assertEqual(JackiesBananas([3, 6, 7, 11], 8), 4)
 
