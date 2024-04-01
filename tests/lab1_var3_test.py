@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("D:\\унік\\лаби\\lab1_var3.py")
-from lab1_var3 import find_kth_element
+from src.lab1_var3 import find_kth_element
 
 class TestFindKthElement(unittest.TestCase):
 

@@ -1,5 +1,5 @@
 import unittest
-from lab2_var3 import JackiesBananas
+from src.lab2_var3 import JackiesBananas
 
 
 class TestForMonkey(unittest.TestCase):
